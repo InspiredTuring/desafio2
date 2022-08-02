@@ -9,22 +9,27 @@ body {
   }
   
   .page {
-    width: 600px;
+    width: fit-content;
     margin: 0 auto;
-    padding-top: 65px;
+    padding: 65px 0px 30px;
+  }
+
+  main {
+    display: flex;
+    gap:100px;
   }
   
   nav {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-  
-    margin-bottom: 15px;
+    margin-bottom: 55px;
   }
   
   ul {
     display: flex;
     list-style: none;
+    gap: 40px;
     margin: 0;
     padding: 0;
   }
@@ -68,20 +73,21 @@ body {
     line-height: 28px;
     color: #7d7987;
   
-    margin: 40px 0;
+    margin: 40px 0px;
   }
   
   button {
     color: white;
     font-family: "Open Sans", sans-serif;
-  
+    text-transform: uppercase;
     background: #69B99D;
-    border: 0;
-    padding: 0 50px 30px;
+    border: 4px;
+    padding: 14px 32px 15px;
+    align-items: center;
   
     display: flex;
-    justify-content: space-around;
-    gap: 50px;
+    justify-content: center;
+    gap: 10px;
   
     border-radius: 4px;
   
@@ -106,7 +112,9 @@ body {
   }
   
   #balls {
+      position: fixed;
       bottom: 0;
       right: 0;
+      opacity: 0.5;
   }
   
